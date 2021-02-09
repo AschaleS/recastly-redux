@@ -2,7 +2,7 @@ import React from 'react';
 import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
 import Search from './Search.js';
-
+//state plannned
 class App extends React.Component {
   constructor(props) {
     super(props);
