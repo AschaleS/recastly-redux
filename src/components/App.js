@@ -15,9 +15,9 @@ class App extends React.Component {
     this.getYouTubeVideos = this.getYouTubeVideos.bind(this);
   }
 
-  componentDidMount() {
-    this.getYouTubeVideos('react tutorials');
-  }
+  // componentDidMount() {
+  //   this.getYouTubeVideos('react tutorials');
+  // }
 
   handleVideoListEntryTitleClick(video) {
     this.setState({currentVideo: video});

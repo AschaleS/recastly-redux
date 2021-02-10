@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
+
 module.exports = {
   entry: {
     './dist/app': path.resolve(__dirname, 'src/index.js'),

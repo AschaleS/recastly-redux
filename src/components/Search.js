@@ -1,6 +1,6 @@
 import React from 'react';
 
- 
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -8,6 +8,7 @@ class Search extends React.Component {
     this.state = {
       value: ''
     };
+    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
   handleInputChange(e) {
