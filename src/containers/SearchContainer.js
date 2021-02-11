@@ -3,14 +3,14 @@ import Search from '../components/Search.js';
 import {handleVideoSearch, changeVideoList, changeVideo} from '../actions/search.js';
 import {handleInputChange} from '../components/Search.js';
 import handleSearchChange from '../actions/search.js';
-console.log('handle', handleSearchChange);
+
 
 const mapStateToProps = (state) => ({ });
 
 // const mapDispatchToProps = {changeVideoList, handleVideoSearch, changeVideo};
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    handleInputChange: (video) => dispatch(handleSearchChange(video))
+    handleSearchInputChange: (video) => dispatch(handleSearchChange(video))
   };
 };
 

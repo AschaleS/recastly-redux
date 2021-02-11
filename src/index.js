@@ -7,6 +7,7 @@ import configureStore from './store/store.js';
 import { Provider } from 'react-redux';
 
 //
+
 //TODO: Import the Provider component from 'react-redux' here!
 
 //TODO: Use the Provider component to make your store available to
@@ -14,7 +15,7 @@ import { Provider } from 'react-redux';
 
 ReactDOM.render(
   <Provider store={configureStore}>
-    <App />,
+    <App />
   </Provider>,
   document.getElementById('app')
 );
