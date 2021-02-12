@@ -9,10 +9,9 @@ var mapStateToProps = (state, ownProps) => {
 };
 
 var mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    video: dispatch(VideoPlayer(video))
-  };
+  return ({});
 };
+
 
 // var mapDispatchToProps = (dispatch, ownProps) => {
 //   return {

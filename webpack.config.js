@@ -1,8 +1,11 @@
 var webpack = require('webpack');
 var path = require('path');
 
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 
-module.exports = {
+const smp = new SpeedMeasurePlugin();
+
+module.exports = smp.wrap({
   entry: {
     './dist/app': path.resolve(__dirname, 'src/index.js'),
     './dist/spec': path.resolve(__dirname, 'spec/index.js')
@@ -29,4 +32,4 @@ module.exports = {
     'react/lib/ReactContext': true,
     'react/lib/ExecutionEnvironment': true
   }
-};
+});
