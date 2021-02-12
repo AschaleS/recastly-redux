@@ -3,7 +3,7 @@ import Search from '../components/Search.js';
 import {handleVideoSearch, changeVideoList, changeVideo} from '../actions/search.js';
 import {handleInputChange} from '../components/Search.js';
 import handleSearchChange from '../actions/search.js';
-
+import search from '../actions/search.js';
 
 const mapStateToProps = (state) => ({ });
 
