@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-var VideoListEntry = ({video, handleVideoListEntryTitleClick}) => (
+var VideoListEntry = ({video}) => (
   <div className="video-list-entry">
     <div className="media-left media-middle">
       <img className="media-object" src={video.snippet.thumbnails.default.url} alt="" />
@@ -9,7 +9,7 @@ var VideoListEntry = ({video, handleVideoListEntryTitleClick}) => (
     <div className="media-body">
       <div
         className="video-list-entry-title"
-        onClick={() => handleVideoListEntryTitleClick(video)}
+        onClick={() => Dispatcher.dispatch(changeVideo(video))}
       >
         {video.snippet.title}
       </div>

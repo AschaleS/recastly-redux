@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var fluxxor = require("fluxxor");
 
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 
